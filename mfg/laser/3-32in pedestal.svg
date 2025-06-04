@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="279.3mm"
+   height="215.8mm"
+   version="1.2"
+   viewBox="0 0 2793 2158"
+   id="svg245"
+   sodipodi:docname="2.5mm.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview247"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72075695"
+     inkscape:cx="310.09066"
+     inkscape:cy="380.8496"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg245" />
+  <title
+     id="title2">FreeCAD SVG Export</title>
+  <desc
+     id="desc4">Drawing page: Page004 exported from FreeCAD document: drilling_block</desc>
+  <defs
+     id="defs6" />
+  <path
+     vector-effect="none"
+     d="m 100.0999,179.999 79.94129,-79.8991 h 659.5163 V 349.7845 H 100.0999 V 179.999 m 90.93329,91.8839 c -5.519,0 -9.9927,-4.4715 -9.9927,-9.9874 v -69.9116 c 0,-5.5159 4.4737,-9.9874 9.9927,-9.9874 h 579.5748 c 5.519,0 9.9927,4.4715 9.9927,9.9874 v 69.9116 c 0,5.5159 -4.4737,9.9874 -9.9927,9.9874 h -579.5748 m 9.9926,-122.8448 c -3.8631,0 -6.9948,-3.13 -6.9948,-6.9912 0,-3.8611 3.1317,-6.9911 6.9948,-6.9911 h 559.5896 c 3.8631,0 6.9948,3.13 6.9948,6.9911 0,3.8612 -3.1317,6.9912 -6.9948,6.9912 h -559.5896 m 0,169.7855 c -3.8631,0 -6.9948,-3.13 -6.9948,-6.9912 0,-3.8611 3.1317,-6.9911 6.9948,-6.9911 h 559.5896 c 3.8631,0 6.9948,3.13 6.9948,6.9911 0,3.8612 -3.1317,6.9912 -6.9948,6.9912 h -559.5896"
+     fill-rule="nonzero"
+     id="path90"
+     style="font-style:normal;font-weight:400;font-size:29.1042px;font-family:'MS Shell Dlg 2';fill:none;stroke:#ff0000;stroke-width:0.1998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+  <metadata
+     id="metadata1184">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>FreeCAD SVG Export</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

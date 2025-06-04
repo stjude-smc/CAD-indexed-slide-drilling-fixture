@@ -1,64 +1,60 @@
-# CAD Template
+# Indexed Slide Drilling Fixture for Quartz Microfluidic Slides
 
-This is a structured template for CAD-based projects, designed for **version control** and **collaboration** using Git.
+## Motivation
+
+Drilling precise, evenly spaced holes in quartz slides for microfluidic applications is challenging due to the risk of slide flexing, misalignment, and surface damage. Commercial solutions are limited and often lack the flexibility for custom layouts.
+
+**Benefits of this custom-made indexed slide drilling fixture:**
+
+* Rigid, reproducible slide positioning using three reference protrusions and two spring-loaded plungers
+* Indexed gear rack mechanism with external spring-loaded plunger enables accurate, repeatable linear movement between hole positions
+* Water-filled slide pocket for cooling and debris reduction during drilling
+* Cutout beneath the imaging region prevents scratching of the slide surface
+* Parametric CAD design allows rapid adjustment of hole pitch and number of fluidic channels for custom microfluidic layouts
+* Can be fabricated quickly from stacked, laser-cut acrylic sheets and standard hardware
 
 ## Folder Structure
 
-- **cad/** → CAD models (both designed and commercial parts)
-  - **parts/mine/** → Your designed parts (`.FCStd`, `.STEP`, etc.)
-  - **parts/commercial/** → Purchased parts (with a folder for each part). Includes 3D models, drawings, datasheets, etc.
-  - **asm/** → CAD assemblies (`.FCStd`, `.STEP`)
+- **cad/** → CAD models
+  - **parts/commercial/** → Purchased parts: 3D models, drawings, datasheets, etc.
+  - **asm/** → CAD assemblies
 
 - **bom/** → Bill of materials
+  - `bom.xlsx` → List of all parts and materials
 
 - **mfg/** → Manufacturing files
-  - **cnc/** → CNC toolpaths and G-code (`.DXF`, `.vcarve`, `.nc`, ...)
   - **3dp/** → 3D printing models (`.STL`, `.preform`, `.3mf`, `.gcode`, ...)
   - **laser/** → Laser cutting files (`.DXF`, `.SVG`, `.PDF`, `.las`)
 
 - **docs/** → Drawings, datasheets, and assembly guides
   - **dwg/** → Drawings for parts and assemblies (`.PDF`)
-  - **guides/** → Manufacturing and assembly instructions (`.PDF`)
-  - PowerPoint with project description and development history
 
-- **slides/** → Presentations and reports (`.PPTX`)
-  - **images** → images you link in `README.md`
+- **imgs/** → Images for `README.md`
 
-- **imgs** → images for `README.md`
+## Manufacturing
 
-## Usage
+The indexed slide drilling fixture can be fabricated using two alternative methods, depending on available equipment and desired material properties:
 
-1. **Use this template** to start a new CAD project:
+### Option A: Laser-Cut Acrylic Assembly
 
-- Click "Use this template" on GitHub.
-- Clone the new repo:
+1. **Material:** Acrylic glass sheets (thicknesses: 1/16", 3/32", 7/32", and 1/4")
+2. **Equipment:** Universal Laser VLS2.30 (or equivalent laser cutter)
+3. **Process:**
+   - Use the provided `.PDF` or `.SVG` files (see `mfg/laser/`) to laser cut each layer of the fixture.
+   - Align and fuse layers together with dichloromethane for a strong, seamless bond.
+   - Install spring-loaded plungers before fusing the top layer.
 
-```bash
-git clone https://github.com/stjude-smc/new-project.git
-```
+### Option B: 3D Printed Assembly
 
-This way, all your new CAD projects will follow the same structure automatically.
+1. **Material:** Tough 2000 Resin (Formlabs) or equivalent
+2. **Equipment:** Formlabs Form 4 (or equivalent SLA 3D printer)
+3. **Process:**
+   - Use the provided `.STL` files (see `mfg/3dp/`) to print each fixture component.
+   - Post-process printed parts as recommended by the resin manufacturer (wash, cure, etc.).
+   - Assemble the fixture by gluing parts together with cyanoacrylate (superglue).
+   - Install spring-loaded plungers before fusing the top layer.
 
-2. **Organize your files:**
+**Note:**  
+Both manufacturing approaches produce a robust fixture suitable for repeated use. The parametric CAD design can be easily adapted for either method to accommodate different slide formats, hole patterns, or channel pitches.
 
-- Keep all CAD models in `cad/`
-- Store vendor-supplied parts in `cad/parts/commercial/`
-- Keep G-code and manufacturing files under `mfg/`
-- Maintain proper documentation in `docs/`
-
-3. **Track changes in Git:**
-
-```
-git add .
-git commit -m "Initial commit"
-git push
-```
-
-4. **Use [git-flow](https://www.gitkraken.com/learn/git/git-flow)** to clearly separate production and development:
-
-- Iterative development is happening in the `develop` branch
-- Big experimental changes happen in `feature` branches
-- Once everything is more or less finalized, switch to `release` branch and generate finalized drawings, manufacturing files, and assembly instructions.
-- Manufacturing-ready, tested releases go to `main` branch, and get a version number assigned.
-
-This structure ensures that your CAD projects stay organized, making collaboration and manufacturing smoother.
+![preview](imgs/Slide_drilling_fixture_photo.jpg)
