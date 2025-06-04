@@ -1,0 +1,8 @@
+# FreeCAD backup and temporary files
+*.autosave.FCStd
+*.FCBak
+*.log
+*.tmp
+
+# Python cache
+__pycache__/
